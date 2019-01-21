@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="et">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Imeline Ajalugu">
+  <meta name="author" content="Georg-Gert Tammeleht">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imeline Ajalugu</title>
+  <link rel="shortcut icon" href="images/favicon.ico"> 
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|PT+Sans|PT+Sans+Narrow" rel="stylesheet">
+  <link rel="stylesheet" 
+        href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" 
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" 
+        crossorigin="anonymous">
+
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" 
+        crossorigin="anonymous">
+
+  <link href="stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <img id="header-bg" src="images/bg.png" alt="background image">
+    <div class="container">
+
+        <header>
+            <div id="ribbon"><h2>Tee ise</h2></div>
+            <h1 id="logo"><strong>Ajalugu</strong></h1>
+            <p>
+                Vali nende põnevate lugude seast välja enda lemmikud.
+                Sinu ja teiste lugejate soovide põhjal paneme kokku ajakirja
+                novembri numbri. Nii sünnib Eesti esimene lugejate poolt 
+                kokku pandud ajakiri, mille Sina võid saada endale tasuta!
+            </p>
+            <a href="#headline">
+                <div id="nav-down">
+                    <span class="fas fa-arrow-down"></span>
+                    <h4><strong>Vali oma lemmikartiklid</strong></h4>
+                </div>
+            </a>
+        </header>
+
+        <main>
+            <section id="headline">
+                <h2><strong>Pane kokku omaenda Imeline Ajalugu</strong></h2>
+                <p>
+                    Vali igast teemast kuni 3 artiklit Imelise Ajaloo novembri numbrisse. 
+                    Tänutäheks saadame selle Sulle tasuta. Kui Sul endal on ajakiri juba tellitud, 
+                    telli tasuta number heale sõbrale, kolleegile või sugulasele.
+                </p>
+            </section>
+            <section>
+                <!--Accordion wrapper-->
+                <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+
+                    <!-- Pingelised sündmused  (CARD 0)-->
+                    <!-- Accordion card -->
+                    <div class="card">
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="0">
+                            <a data-toggle="collapse" data-parent="#accordionEx" href="#collapse-1" aria-expanded="true"
+                            aria-controls="collapse-1">
+                                <h5 class="active-header">Pingelised sündmused</h5>
+                                <div class="checked-count" id="counter-0">0/3</div>
+                            </a>
+                        </div>
+                    
+                        <!-- Card body -->
+                        <div id="collapse-1" class="collapse show" role="tabpanel" aria-labelledby="1" data-parent="#accordionEx">
+                            <div class="card-body" id="card-0">
+                                <!--JavaScript generated HTML-->
+                            </div>
+                            <div class="btn-container">
+                                <button id="0-next" class="btn-next">Järgmine teema</button>
+                            </div>    
+                        </div>
+                    </div>
+
+                    <!-- Kuulsad teod  (CARD 1)-->
+                    <div class="card">
+                        <div class="card-header" role="tab" id="1">
+                            <a data-toggle="collapse" data-parent="#accordionEx" href="#collapse-2" aria-expanded="false"
+                            aria-controls="collapse-2">
+                                <h5>Kuulsad teod</h5>
+                                <div class="checked-count" id="counter-1">0/3</div>
+                            </a>
+                        </div>
+                    
+                        <div id="collapse-2" class="collapse" role="tabpanel" aria-labelledby="2" data-parent="#accordionEx">
+                            <div class="card-body" id="card-1">
+                                <!--JavaScript generated HTML-->
+                            </div>
+                            <div class="btn-container">
+                                <button id="1-next" class="btn-next">Järgmine teema</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Igapäevane elu  (CARD 2)-->
+                    <div class="card">
+                        <div class="card-header" role="tab" id="2">
+                            <a data-toggle="collapse" data-parent="#accordionEx" href="#collapse-3" aria-expanded="false"
+                            aria-controls="collapse-3">
+                                <h5>Igapäevane elu</h5>
+                                <div class="checked-count" id="counter-2">0/3</div>
+                            </a>
+                        </div>
+                    
+                        <div id="collapse-3" class="collapse" role="tabpanel" aria-labelledby="3" data-parent="#accordionEx">
+                            <div class="card-body" id="card-2">
+                                <!--JavaScript generated HTML-->
+                            </div>
+                            <div class="btn-container">
+                                <button id="2-next" class="btn-next">Järgmine teema</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Suured konfliktid  (CARD 3)-->
+                    <div class="card">
+                        <div class="card-header" role="tab" id="3">
+                            <a data-toggle="collapse" data-parent="#accordionEx" href="#collapse-4" aria-expanded="false"
+                            aria-controls="collapse-4">
+                                <h5>Suured konfliktid</h5>
+                                <div class="checked-count" id="counter-3">0/3</div>
+                            </a>
+                        </div>
+                    
+                        <div id="collapse-4" class="collapse" role="tabpanel" aria-labelledby="3" data-parent="#accordionEx">
+                            <div class="card-body" id="card-3">
+                                <!--JavaScript generated HTML-->
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn-done" disabled>Valmis!</button>
+                </div>
+
+            </section>
+            <section id="description">
+                <p>
+                    <a href="#">Imeline Ajalugu</a> on põhjamaade populaarseim ajalooajakiri, millel on Eestis üle 50 000 lugeja. 
+                    Ajakiri ilmub kord kuus, igas numbris on põnevad ja rikkalikult illustreeritud lood ligi 100 leheküljel. 
+                    Imelist Ajalugu annab Eestis välja AS Äripäev alates 2011 aaasta sügisest.
+                </p>
+                <img src="images/covers.png" alt="magazine covers">
+            </section>
+            
+        </main>
+    </div>
+
+    <footer>
+        <div class="container">
+            <a data-toggle="modal" data-target="#modal-terms">Tutvu kampaania tingimustega</a>
+            <p>Klienditeeninduse e-post: <a href="#">register@imelineajalugu.ee</a>, tel: 667 0099 (tööpäeviti 9–17)</p>
+        </div>
+
+        <!--Modal-->
+        <div class="modal fade" id="modal-terms">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Kampaania tingimused</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+                        </p>
+                        <p>
+                            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+                        </p>
+                        <p>
+                            Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. 
+                        </p>
+                        <p>
+                            Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+
+
+    <!--Scripts-->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" 
+            integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" 
+            crossorigin="anonymous">
+    </script>
+    <script src="javascript.js"></script>
+
+</body>
+
+</html>

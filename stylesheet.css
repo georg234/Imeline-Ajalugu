@@ -1,0 +1,493 @@
+/*
+  Paid font // Free font replacement: 
+  Bienetresocial // Libre Baskerville 
+*/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 1920px;
+    margin: auto;
+    position: relative;
+    font-family: 'PT Sans', sans-serif;
+    color: rgb(34, 34, 34);
+}
+
+#header-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-width: 1920px;
+    max-height: 616px;
+    z-index: -1;
+    object-fit: none;
+
+}
+
+.container {
+    max-width: 970px;
+    z-index: 1;
+}
+
+/*          <<<HEADER>>>         */
+#ribbon {
+    width: 260px;
+    height: 60px;
+    position: absolute;
+    background: -webkit-linear-gradient(top, rgb(147,27,0) 0%,rgb(189,44,0) 69%, rgb(194,46,0) 82%);
+    background: -moz-linear-gradient(top, rgb(147,27,0) 0%,rgb(189,44,0) 69%, rgb(194,46,0) 82%);
+    background: linear-gradient(to bottom, rgb(147,27,0) 0%,rgb(189,44,0) 69%, rgb(194,46,0) 82%);
+}
+
+#ribbon::before{
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-color: rgb(194,46,0) transparent;
+    bottom: -12px;
+    border-width: 12px 130px 0 130px;
+}
+
+#ribbon>h2 {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 65px;
+    text-align: center;
+    color: white;
+}
+
+h1#logo {
+    position: relative;
+    font-family: 'Libre Baskerville', serif;
+    padding-top: 105px;
+    font-size: 100px;    
+}
+
+h1#logo::before {
+    content: "Imeline";
+    text-transform: uppercase;
+    position: absolute;
+    font-size: 27px;
+    font-weight: bold;
+    left: -57px;
+    top: 145px;
+    -moz-transform: matrix( 0.16181042000256,-0.44329795399202,0.44352795100573,0.16172651116817,0,0);
+    -webkit-transform: matrix( 0.16181042000256,-0.44329795399202,0.44352795100573,0.16172651116817,0,0);
+    transform: matrix( 0.16181042000256,-0.44329795399202,0.44352795100573,0.16172651116817,0,0);
+}
+
+/* background glow for paragraph below */
+h1#logo::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 570px;
+    box-shadow: 0 100px 200px 80px rgb(255, 255, 255);
+    z-index: -1;
+}
+
+header>p {
+    font-size: 20px;
+    max-width: 515px;
+    margin-top: 40px;
+    text-shadow: 0.707px 0.707px 1px rgb(255, 255, 255);
+}
+
+#nav-down {
+    display: inline-block;
+}
+
+#nav-down>span, #nav-down>h4 {
+    display: inline;
+    color: rgb(166, 35, 0);
+    font-size: 30px;
+    text-shadow: 0.707px 0.707px 1px rgb(255, 255, 255);
+}
+
+#nav-down>h4 {
+    font-family: 'PT Sans Narrow', sans-serif;
+    margin-left: 15px; 
+}
+
+#nav-down>span {
+    font-weight: bold;
+}
+
+.fa-arrow-down {
+    -webkit-text-stroke: 2px;
+}
+
+/*          <<<MAIN>>>          */
+
+/* Headline section */
+#headline {
+    max-width: 740px;
+}
+
+#headline>h2 {
+    margin-top: 180px;
+    margin-bottom: 20px;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 30px;
+    color: rgb(63, 41, 22);
+}
+
+/* Accordion section */
+.accordion .card .card-header {
+    margin-bottom: 0px; 
+}
+
+.accordion {
+    margin-top: 50px;
+}
+
+.card {
+    border: none;
+}
+
+.card-header {
+    border-color: rgb(255, 231, 86);
+    background-color: white;
+    padding: 0;
+    padding-top: 20px;
+}
+
+.card-header>a {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 20px;
+    color: rgb(63, 41, 22);
+}
+
+.card-header>a>h5 {
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 0;
+    line-height: 36px;
+    padding: 16px;
+}
+
+.active-header {
+    background-color: rgb(255, 234, 103);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.checked-count {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 4px;
+    position: absolute;
+    top: 36px;
+    right: 10px;
+}
+
+.checked {
+    background-color: rgb(255, 253, 239);
+}
+
+/* Card-body content // Articles */
+.card-body {
+    padding-top: 1px;
+}
+
+.card-body>div{
+    border-bottom: 1px solid rgb(255, 248, 205);
+    padding: 10px;
+}
+
+article>img {
+    float: left;
+    margin-right: 15px;
+    border: 1px solid rgb(238, 238, 238);   
+}
+
+.article-text>h6 {
+    font-weight: bold;
+}
+
+.article-text>p {
+    max-width: 759px;
+    margin-bottom: 10px;
+}
+
+.btn-container {
+    border-bottom: 1px solid rgb(255, 231, 86);
+}
+
+.btn-next {
+    /* button */
+    cursor: pointer;
+    width: 208px;
+    height: 58px;
+    background-color: rgb(165, 35, 0);
+    border-radius: 6px;
+    border: 1px solid rgb(123, 23, 0);
+    box-shadow: inset 0px 1px 1px 0px rgba(255, 255, 255, 0.75);
+    display: block;
+    margin: 20px auto;
+
+    /* text in button */
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "PT Sans Narrow";
+    color: rgb(255, 255, 255);
+    text-shadow: -0.707px -0.707px 0px rgba(0, 0, 0, 0.2);
+}
+
+.btn-done {
+    border: 1px solid rgb(153, 153, 153);
+    border-radius: 6px;
+    background-color: rgb(177, 177, 177);
+    box-shadow: inset 0px 1px 1px 0px rgba(255, 255, 255, 0.75);
+    width: 178px;
+    height: 58px;
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    cursor: not-allowed;
+
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "PT Sans Narrow";
+    color: rgb(226, 226, 226);
+    text-shadow: -0.707px -0.707px 0px rgba(0, 0, 0, 0.2);
+}
+
+.btn-activated {
+    background-color: rgb(165, 35, 0);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+/*      Checkbox       */
+.checkbox-container {
+    float: left;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    padding-left: 60px;
+    margin-top: 25px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  
+/* hides the browser's default checkbox */
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+  
+/* custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background-color: rgb(239, 239, 239);
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 2px;
+}
+  
+.checkmark:hover {
+    border-color: rgb(240, 206, 0);
+    background-color: rgb(255, 246, 191);
+}
+  
+/* when the checkbox is checked */
+.checkbox-container input:checked ~ .checkmark {
+    box-shadow: inset 0px 1px 3px 0px rgb(240, 206, 0);
+    border: 1px solid rgb(240, 206, 0);
+    background-color: rgb(255, 246, 191);
+}
+
+/* custom checkmark/indicator  */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 2px;
+    width: 10px;
+    height: 16px;
+    border: solid rgb(63, 41, 22);
+    border-width: 0 3.5px 3.5px 0;
+    -webkit-transform: rotate(42deg);
+    -ms-transform: rotate(42deg);
+    transform: rotate(42deg);
+
+    display: none;
+}
+  
+/* show the checkmark when checked */
+.checkbox-container input:checked ~ .checkmark:after {
+    display: inline-block;
+}
+ 
+/*      Description Section   */
+section#description {
+    margin-top: 80px;
+    position: relative;
+}
+
+section#description>div.col-7 {
+    font-size: 20px;    
+    border: 1px solid red;
+    padding-right: 0;
+}
+
+section#description>p {
+    display: inline-block;
+    max-width: 520px;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 42px;
+}
+
+section#description>p>a {
+    color: rgb(149, 28, 0);
+    text-decoration: underline;
+    font-weight: bold;
+} 
+
+section#description>img {
+    position: absolute;
+    top: -27px;
+    right: 1px;
+    z-index: -1;
+}   
+
+/*          <<<FOOTER>>>          */
+footer {
+    background-color: rgb(59, 53, 48);
+    width: 100%;
+    height: 140px;
+    margin-bottom: 470px;
+}
+
+footer>div.container {
+    color: rgb(255, 255, 255);
+    padding-top: 40px;
+}
+
+footer>div.container>a, footer>div.container>p>a {
+    /* Bootstrap had too strong selectors-> a:not([href]):not([tabindex]) */
+    color: rgb(255, 231, 86) !important; 
+    text-decoration: underline !important; 
+    cursor: pointer;
+}
+
+footer>div.container>p {
+    margin: 15px auto;
+}
+
+/* Modal */
+.modal-content {
+    border-radius: 0;
+}
+
+.modal-header {
+    border-bottom: none;
+    padding-top: 38px;
+    padding-left: 38px;
+}
+
+.modal-title {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(63, 41, 22);
+}
+
+button.close {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 40px;
+}
+
+.modal-body {
+    padding-left: 40px;
+    padding-right: 53px;
+    padding-bottom: 58px;
+}
+
+/*      MEDIA QUERIES       */  
+@media(max-width: 910px) {
+    section#description>p {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    section#description>img {
+        position: relative;
+        display: block;
+        margin: auto;
+    }
+
+    footer {
+        position: absolute;
+        bottom: -545px;
+    }
+}
+
+@media (max-width: 740px) {
+    .card-body{
+        padding: 0;
+        padding-top: 20px;
+    }
+
+    .card-body div{
+        height: auto;
+    }
+   
+    article>img {
+        float: right;
+        margin-right: 0;
+        margin-left: 10px;
+    }
+
+    .article-text>p,h6 {
+        font-size: 15px;
+    }
+
+    .checkbox-container {
+        height: 4px;
+        padding-left: 30px;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .btn-next {
+        width: 140px;
+        height: 40px;
+        font-size: 20px;
+    }
+}
+
+@media(max-width:403px) {
+    h1#logo {
+        font-size: 90px;
+    }
+
+    h1#logo::before {
+        font-size: 25px;
+        left: -52px;
+        top: 140px;
+    }
+
+    footer>div.container {
+        padding-top: 20px;
+    }
+}
